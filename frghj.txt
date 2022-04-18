@@ -1,0 +1,21 @@
+<?php                                                                                                    
+return [                                                                                                 
+    'backend' => [                                                                                       
+        'frontName' => 'PUjbcJfzYQqqP6BeP'                                                               
+    ],                                                                                                   
+    'queue' => [                                                                                         
+        'consumers_wait_for_messages' => 1                                                               
+    ],                                                                                                   
+    'db' => [                                                                                            
+        'connection' => [                                                                                
+            'indexer' => [                                                                               
+                'host' => 'dbar-m2-prod-aurora.cluster-cney2h01koww.us-east-1.rds.amazonaws.com',        
+                'dbname' => 'dbarm2_prod_mag',                                                           
+                'username' => 'dbarm2_prod_brbv3',                                                       
+                'password' => 'CAbezncDdCYrQgt',           
+				
+				amasty_amsmtp_log, amasty_amsmtp_debug
+				
+				mysqldump -h dbar-m2-prod-aurora.cluster-cney2h01koww.us-east-1.rds.amazonaws.com -u dbarm2_prod_brbv3 -p dbarm2_prod_mag amasty_amsmtp_log > amasty_amsmtp_log.sql
+				
+				mysqldump -h dbar-m2-prod-aurora.cluster-cney2h01koww.us-east-1.rds.amazonaws.com -u dbarm2_prod_brbv3 -p dbarm2_prod_mag  amasty_amsmtp_debug > amasty_amsmtp_debug.sql
